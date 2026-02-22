@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicado Oficial</title>
+    <!-- Importação do Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação de fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importação de ícones (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Fundo escuro (slate-900) para um tom sério */
+            background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        /* Animação de pulsação suave para o ícone de aviso */
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: .7; transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-200 flex flex-col justify-center items-center p-4">
+
+    <!-- Contentor principal -->
+    <main class="max-w-2xl w-full bg-slate-800/50 backdrop-blur-md border border-slate-700 p-8 md:p-12 rounded-2xl shadow-2xl text-center relative overflow-hidden">
+        
+        <!-- Detalhe visual de topo (linha vermelha/laranja indicando alerta) -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-orange-500 to-amber-500"></div>
+
+        <!-- Ícone -->
+        <div class="flex justify-center mb-6">
+            <div class="bg-red-500/10 p-4 rounded-full pulse-slow">
+                <i data-lucide="alert-triangle" class="w-12 h-12 text-red-400"></i>
+            </div>
+        </div>
+
+        <!-- Títulos -->
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+            Comunicado Oficial
+        </h1>
+        
+        <!-- Mensagem -->
+        <div class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed space-y-4 text-left md:text-center">
+            <p>
+                Por motivos de transparência, ética e profundo respeito a todos os envolvidos, venho a público através desta declaração oficial expor e alertar sobre os recentes acontecimentos.
+            </p>
+            
+            <div class="bg-red-500/10 border-l-4 border-red-500 p-4 rounded-r text-base md:text-lg text-red-200">
+                <p class="font-semibold mb-2 flex items-center justify-center md:justify-start">
+                    <i data-lucide="info" class="w-5 h-5 mr-2"></i> Alerta Importante
+                </p>
+                <p class="text-left">
+                    Recomendamos fortemente que <strong>não concluam nenhuma negociação</strong> sem antes consultar o histórico de processos judiciais da empresa envolvida. Pesquisem e compreendam a extrema gravidade e os riscos criminais de se fabricar e comercializar supostos "fitoterápicos" sem a devida documentação, laudos e regulamentação.
+                </p>
+            </div>
+
+            <div class="mt-6 bg-slate-900/80 border border-slate-600 p-5 rounded-lg text-sm md:text-base text-slate-300 text-left shadow-inner">
+                <p class="font-semibold text-slate-100 mb-3 flex items-center">
+                    <i data-lucide="building" class="w-5 h-5 mr-2 text-purple-400"></i> Empresa de Fachada e Endereço Falso
+                </p>
+                <p class="leading-relaxed">
+                    Informo também que o endereço físico apresentado pela empresa <strong>não existe</strong>. Embora apontem para um prédio comercial, não possuem nenhuma sala comercial ou operação no local, configurando-se como uma verdadeira <strong>empresa de fachada</strong>.
+                </p>
+            </div>
+
+            <div class="mt-6 bg-slate-900/80 border border-slate-600 p-5 rounded-lg text-sm md:text-base text-slate-300 text-left shadow-inner">
+                <p class="font-semibold text-slate-100 mb-3 flex items-center">
+                    <i data-lucide="users" class="w-5 h-5 mr-2 text-blue-400"></i> Clientes Lesados e Quebra de Contrato
+                </p>
+                <p class="leading-relaxed mb-4">
+                    Além das graves irregularidades nas formulações, diversos clientes relataram situações de estelionato e quebra de contrato, tendo pago por mercadorias que nunca foram entregues e sem qualquer estorno dos valores.
+                </p>
+                <div class="bg-slate-800/80 p-4 rounded border-l-4 border-blue-500 mb-4">
+                    <p class="italic text-slate-300 text-sm mb-2">
+                        "Minha experiência com a Ultracaps foi profundamente frustrante. Contratei o serviço em dezembro de 2024, realizei o pagamento e nunca recebi o produto. Também não houve estorno. As tentativas de solução foram longas e desgastantes. Compartilho este relato como um registro honesto da minha vivência como consumidor."
+                    </p>
+                    <p class="text-right text-xs font-semibold text-slate-400">- Dr. Jailton Campos (Relato com uso expressamente autorizado)</p>
+                </div>
+                
+                <p class="text-sm text-slate-300 mb-4 bg-slate-800/50 p-3 rounded border border-slate-700 flex items-center">
+                    <i data-lucide="phone" class="w-4 h-4 mr-2 text-blue-400 flex-shrink-0"></i>
+                    <span>Para quem tiver dúvidas e quiser confirmar a veracidade destes fatos para tirar as suas próprias conclusões, o Dr. Jailton autorizou a disponibilização do seu contacto direto: <strong>(19) 99106-8615</strong>.</span>
+                </p>
+
+                <p class="leading-relaxed text-sm">
+                    Outros clientes que também se encontram na mesma situação, aguardando produtos ou buscando resolução via processos judiciais, incluem: <strong>Mariane, Deivid, Antônio, entre vários outros</strong>.
+                </p>
+            </div>
+
+            <div class="mt-6 bg-slate-900/80 border border-slate-600 p-5 rounded-lg text-sm md:text-base text-slate-300 text-left shadow-inner">
+                <p class="font-semibold text-slate-100 mb-3 flex items-center">
+                    <i data-lucide="shield-alert" class="w-5 h-5 mr-2 text-amber-500"></i> Registro de Autoria e Segurança Pública
+                </p>
+                <p class="mb-2">
+                    <strong>Denunciante:</strong> Jean Burba Freitas
+                </p>
+                <p class="leading-relaxed mb-3">
+                    Fica publicamente registrado que recebi várias ameaças e que quaisquer danos relacionados à minha pessoa, bem como à minha integridade física, terão como principais responsáveis os Srs. <strong>João Miguel Chicoski</strong> (fundador da UltraCaps Brasil) e <strong>João Nicolas Correa de Solza Delgado</strong>.
+                </p>
+                <p class="leading-relaxed font-semibold text-amber-400 mb-5">
+                    Peço encarecidamente às autoridades competentes que investiguem e resolvam estas situações com a máxima urgência.
+                </p>
+
+                <!-- Nova seção para o Áudio -->
+                <div class="bg-slate-800/80 p-4 rounded border border-slate-700">
+                    <p class="font-semibold text-red-400 mb-2 flex items-center">
+                        <i data-lucide="volume-2" class="w-4 h-4 mr-2"></i> Evidência em Áudio
+                    </p>
+                    <p class="text-xs text-slate-400 mb-3">
+                        Abaixo encontra-se o registo em áudio contendo confissões e provas relacionadas aos fatos e indivíduos mencionados acima.
+                    </p>
+                    
+                    <!-- Player de Áudio oficial do Google Drive -->
+                    <iframe src="https://drive.google.com/file/d/1PmsqRdKWdzHnXOalWeMRYrwdlbC7bnpF/preview" width="100%" height="80" allow="autoplay" class="rounded-md border-0 bg-slate-900"></iframe>
+                    
+                    <p class="text-xs text-slate-400 mt-3 flex items-center">
+                        <i data-lucide="external-link" class="w-3 h-3 mr-1"></i>
+                        Se o áudio não tocar, <a href="https://drive.google.com/open?id=1PmsqRdKWdzHnXOalWeMRYrwdlbC7bnpF&usp=drive_fs" target="_blank" rel="noopener noreferrer" class="text-blue-400 underline hover:text-blue-300 ml-1">clique aqui para abrir no Google Drive</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fecho -->
+        <div class="mt-8 flex flex-col items-center justify-center">
+            <span class="text-sm text-slate-400 uppercase tracking-widest font-semibold">
+                A verdade prevalece.
+            </span>
+        </div>
+        
+    </main>
+
+    <!-- Inicialização dos Ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
